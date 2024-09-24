@@ -11,8 +11,8 @@ document.getElementById('donate-div-btn').addEventListener('click',function(){
     donateDiv.classList.remove('hidden');
     historyDiv.classList.add('hidden');
 
-    if (!donateBtn.classList.contains('bg-lime-300')) {
-        donateBtn.classList.add('bg-lime-300');
+    if (!donateBtn.classList.contains('bg-lime-200')) {
+        donateBtn.classList.add('bg-lime-200');
     }
 
     document.getElementById('history-div-btn').classList.remove('bg-lime-300');
