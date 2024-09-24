@@ -40,7 +40,7 @@
       <div class="flex flex-row justify-center items-center lg:justify-end w-full">
         <img src="assets/coin.png" alt="coin">
         <p class="ml-2 text-xl font-bold text-gray-500">
-          <span id="balance">8000</span> BDT
+          <span id="balance">30000</span> BDT
         </p>
       </div>
     </div>
@@ -51,48 +51,39 @@
 
     <div class="collapse collapse-arrow bg-base-100 border rounded-lg">
       <input type="radio" name="my-accordion" checked="checked" />
-      <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
       <div class="collapse-content">
-        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+        <p>The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. </p>
       </div>
     </div>
     <div class="collapse collapse-arrow bg-base-100 border rounded-lg">
       <input type="radio" name="my-accordion" />
       <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
       <div class="collapse-content">
-        <p>Using getElementById: The getElementById method allows you to select an element by its ID.</p>
-        <p>Using querySelector: The querySelector method allows you to select the first element that matches a specified CSS selector(s) in the document.</p>
+        <p> 1 .Using getElementById: The getElementById method allows you to select an element by its ID. ...
+            2. Using getElementsByClassName: ...
+            3. Using getElementsByTagName: ...
+            4 .Using querySelector: ...</p>
+      
       </div>
     </div>
     <div class="collapse collapse-arrow bg-base-50 border rounded-lg">
       <input type="radio" name="my-accordion" />
       <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it useful?</div>
       <div class="collapse-content">
-        <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element. This pattern is particularly valuable in scenarios where you have a large number of similar elements, such as list items, and want to optimize event handling.</p>
-
-        <p>Benefits of event delegation:
-          Efficiency: Event delegation reduces the number of event listeners, improving memory usage and performance, especially when dealing with a large number of elements.
-          Dynamic elements: It works seamlessly with dynamically added or removed child elements, as the common ancestor continues to listen for events on them.</p>
+        <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.  It allows us to attach a single event listener for elements that exist now or in the future.</p>
+            
       </div>
     </div>
     <div class="collapse collapse-arrow bg-base-50 border rounded-lg">
       <input type="radio" name="my-accordion" />
       <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
       <div class="collapse-content">
-        <p>The following are the most common and practical ways you might want to manipulate the Element object:
-
-          Change the Content of an Element
-          Manipulate the Class Attribute
-          Setting CSS Styles Using JavaScript
-          Create, Add, and Remove Elements
-          Insert Element at a Specific Position
-          Manipulating Element Attributes
-          Manipulating Data Attributes</p>
+        <p>Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler method is used to change the <input> element's style when the user clicks inside it. When this event occurs, the element's background color will change to purple.</p>
       </div>
     </div>
 
-  </main>
-  <script type="text/javascript" src="blog.js"></script>
+</main>
     
 </body>
 </html>
