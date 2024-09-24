@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Blog | Donate for Bangladesh</title>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                font: ['Laxend'],
+              },
+            }
+          }
+        }
+      </script>
+      
+</head>
+<body class="flex flex-col justify-center items-center font-laxend">
+  <header class="sticky top-0 flex flex-col justify-center items-center w-full bg-white bg-opacity-50 backdrop-blur-md backdrop-filter border-b border-gray-200 z-50">
+
+    <div class="w-full px-20 py-5 mb-5 flex flex-col lg:flex-row justify-between items-center gap-3 bg-red-50 bg-opacity-50">
+      <div class="w-full flex flex-col justify-center lg:items-start items-center">
+        <button class="btn bg-lime-300 text-xl px-8 font-bold" id="homebtn">Home</button>            
+      </div>
+      <div class="flex flex-row justify-center items-center w-full">
+        <img src="assets/logo.png" alt="logo">
+        <p class="text-xl font-bold ml-4">Donate Bangladesh</p>
+      </div>
+      <div class="flex flex-row justify-center items-center lg:justify-end w-full">
+        <img src="assets/coin.png" alt="coin">
+        <p class="ml-2 text-xl font-bold text-gray-500">
+          <span id="balance">8000</span> BDT
+        </p>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="flex flex-col justify-start items-center lg:w-10/12 w-full px-2 mt-5 gap-2 min-h-screen">
+
+    <div class="collapse collapse-arrow bg-base-100 border rounded-lg">
+      <input type="radio" name="my-accordion" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+      <div class="collapse-content">
+        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-100 border rounded-lg">
+      <input type="radio" name="my-accordion" />
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p>Using getElementById: The getElementById method allows you to select an element by its ID.</p>
+        <p>Using querySelector: The querySelector method allows you to select the first element that matches a specified CSS selector(s) in the document.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-50 border rounded-lg">
+      <input type="radio" name="my-accordion" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it useful?</div>
+      <div class="collapse-content">
+        <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element. This pattern is particularly valuable in scenarios where you have a large number of similar elements, such as list items, and want to optimize event handling.</p>
+
+        <p>Benefits of event delegation:
+          Efficiency: Event delegation reduces the number of event listeners, improving memory usage and performance, especially when dealing with a large number of elements.
+          Dynamic elements: It works seamlessly with dynamically added or removed child elements, as the common ancestor continues to listen for events on them.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-50 border rounded-lg">
+      <input type="radio" name="my-accordion" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+      <div class="collapse-content">
+        <p>The following are the most common and practical ways you might want to manipulate the Element object:
+
+          Change the Content of an Element
+          Manipulate the Class Attribute
+          Setting CSS Styles Using JavaScript
+          Create, Add, and Remove Elements
+          Insert Element at a Specific Position
+          Manipulating Element Attributes
+          Manipulating Data Attributes</p>
+      </div>
+    </div>
+
+  </main>
+  <script type="text/javascript" src="blog.js"></script>
+    
+</body>
+</html>
